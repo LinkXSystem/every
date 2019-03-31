@@ -57,8 +57,8 @@
   },
   "main": "./app/main.prod.js",
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.develar.ElectronReact",
+    "productName": "Every",
+    "appId": "org.linksystem.Every",
     "files": [
       "app/dist/",
       "app/app.html",
@@ -117,23 +117,15 @@
   },
   "contributors": [
     {
-      "name": "Vikram Rangaraj",
-      "email": "vikr01@icloud.com",
-      "url": "https://github.com/vikr01"
-    },
-    {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
+      "name": "zhi",
+      "email": "linkxsystem@gmail.com",
+      "url": "https://github.com/LinkXSystem"
     }
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
-  },
   "keywords": [
+    "every",
     "electron",
-    "boilerplate",
     "react",
     "redux",
     "flow",
@@ -142,7 +134,7 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/LinkXSystem/every#readme",
   "jest": {
     "testURL": "http://localhost/",
     "moduleNameMapper": {
