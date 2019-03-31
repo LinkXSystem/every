@@ -8,7 +8,7 @@ export default class MenuBuilder {
     this.mainWindow = mainWindow;
   }
 
-  buildMenu() {
+  buildMenu(isVisible = true) {
     if (
       process.env.NODE_ENV === 'development' ||
       process.env.DEBUG_PROD === 'true'
@@ -22,7 +22,9 @@ export default class MenuBuilder {
         : this.buildDefaultTemplate();
 
     const menu = Menu.buildFromTemplate(template);
-    Menu.setApplicationMenu(menu);
+    // 控制显示菜单栏，参考链接：https://electronjs.org/docs/api/menu
+    // eslint-disable-next-line
+    isVisible ? Menu.setApplicationMenu(null) : Menu.setApplicationMenu();
 
     return menu;
   }

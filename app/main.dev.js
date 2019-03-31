@@ -70,7 +70,8 @@ app.on('ready', async () => {
   mainWindow = new BrowserWindow({
     show: false,
     width: 1024,
-    height: 728
+    height: 728,
+    frame: process.env.NODE_ENV === 'development'
   });
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);
@@ -93,6 +94,7 @@ app.on('ready', async () => {
     mainWindow = null;
   });
 
+  // 禁用菜单栏模块
   const menuBuilder = new MenuBuilder(mainWindow);
   menuBuilder.buildMenu();
 
